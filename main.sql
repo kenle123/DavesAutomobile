@@ -734,7 +734,7 @@ NATURAL JOIN MaintenanceItem
 GROUP BY iName
 ORDER BY PackageID ASC;
 
---Query #7 not done
+--Query #7
 select eFirstName, eLastName, Mechanic_Skill.sName,  
 from Employee 
 left outer join Mechanic on Employee.empID = Mechanic.mechID
@@ -793,7 +793,7 @@ GROUP BY Vehicle.VIN
 ORDER BY AverageNumberOfMaintenanceVisits DESC
 LIMIT 5;
 
---Query #13 Not done
+--Query #13 
 SELECT E.mechID as Mentee, M.mechID as Mentor,
 X.eFirstName as MenteeFirstName, X.eLastName as MenteeLastName,
 Y.eFirstName as MentorFirstName, Y.eLastName as MentorLastName,
